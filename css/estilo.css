@@ -1,0 +1,77 @@
+/* ejemplo aritmetico */
+.box_uno {
+  background-color: #33d374;
+  width: 640px; }
+
+.box_dos {
+  background-color: #4285F4;
+  width: 426.66667px; }
+
+/* ejemplo if */
+p {
+  color: #33d374;
+  padding: 30px;
+  background-color: red; }
+
+/* ejemplo bucle */
+.casitodos-1 {
+  width: 2em;
+  background-color: #4285F4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+
+.casitodos-2 {
+  width: 4em;
+  background-color: #4285F4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+
+.casitodos-3 {
+  width: 6em;
+  background-color: #4285F4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+
+/* ejemplo each + map */
+.btn--twitter {
+  background-color: #55acee;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: inline; }
+
+.btn--facebook {
+  background-color: #3a5795;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: inline; }
+
+.btn--email {
+  background-color: #c25e30;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: inline; }
+
+/* ejemplo extend + mixin */
+.redSocial, .redSocial--nueva {
+  background-color: #4285F4;
+  border: 1px #000; }
+
+.redSocial--nueva {
+  border: 3px; }
+
+.box_uno {
+  width: 500px;
+  height: 50px; }
+
+.box_dos {
+  width: 1000px;
+  height: 100px; }

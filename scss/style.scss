@@ -1,0 +1,91 @@
+@import "colores";
+@import "tamanios";
+
+/* ejemplo aritmetico */
+.box_uno{
+	background-color:$green;
+	width:$ancho/2	
+}
+
+.box_dos{
+	background-color:$blue;
+	width:$ancho/(53-50);
+}
+
+/* ejemplo if */
+
+$animal:caballo;
+
+p {
+	@if $animal == gato {
+	color:$blue;
+	padding:10px;
+	background-color:$green;
+	}
+	@else if $animal == perro {
+	color:$red;
+	padding:20px;
+	background-color:$black;
+	}
+	@else if $animal == caballo {
+	color:$green;
+	padding:30px;
+	background-color:$red;
+	}
+	@else {
+	color:$black;
+	background-color:$blue;
+	}
+}
+
+/* ejemplo bucle */
+
+@for $i from 1 through 3 {
+	.casitodos-#{$i} {
+	width:2em * $i;
+	background-color:$blue;
+	padding:20px;
+	margin-bottom:20px;
+	border-radius:20px;
+	}
+}
+
+/* ejemplo each + map */
+
+$redes:(
+	twitter:#55acee,
+	facebook:#3a5795,
+	email:#c25e30
+);
+
+@each $redSocial, $color in $redes {
+	.btn--#{$redSocial} {
+	background-color:$color;
+	color:$white;
+	padding:20px;
+	margin-bottom:20px;
+	border-radius:20px;
+	display:inline;
+	}
+}
+/* ejemplo extend + mixin */
+.redSocial{
+	background-color:$blue;
+	border: 1px $black;
+}
+.redSocial--nueva{
+	@extend .redSocial;
+	border:3px;
+}
+
+@mixin sizes($width,$height){
+	width:$width;
+	height:$height;
+}
+
+.box_uno{
+	@include sizes(500px,50px);
+}
+.box_dos{
+	@include sizes(1000px,100px);
+}
